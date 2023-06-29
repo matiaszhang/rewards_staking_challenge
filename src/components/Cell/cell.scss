@@ -1,0 +1,25 @@
+@import "common.scss";
+
+.cell {
+  display: flex;
+  width: 10rem;
+  height: 3rem;
+  justify-content: center;
+  flex-shrink: 0;
+  color: $text-color;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: $cell-bg-color;
+
+  &-error {
+    border: 1px solid $error-border-color !important;
+    background-color: $error-bg-color;
+  }
+
+  &:focus {
+    border: 1px solid #277db6 !important;
+    background-color: #bdfbff38;
+  }
+}

@@ -1,0 +1,17 @@
+@import "common.scss";
+
+.spinner {
+  display: inline-block;
+  width: 15px;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #555;
+  border-left-color: $button2-color;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

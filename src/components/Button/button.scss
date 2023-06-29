@@ -1,0 +1,44 @@
+@import "common.scss";
+
+.btn {
+  border: 1px solid $button1-color;
+  background-color: rgba($button1-color, 0.1);
+  border-radius: 0.5rem;
+  color: #1b717f;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-row {
+    width: 2rem;
+    height: 5rem;
+  }
+
+  &-column {
+    height: 2rem;
+    width: 5rem;
+  }
+
+  &:hover {
+    background-color: rgba($button1-color, 0.5);
+    box-shadow: 0 0 10px $button1-color;
+  }
+}
+
+.save-btn {
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $button2-color;
+  background: rgba($button2-color, 0.1);
+  color: $button2-color;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px $button2-color;
+  }
+}
